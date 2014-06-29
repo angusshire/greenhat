@@ -1,1 +1,1 @@
-python greenhat.py
+python greenhat.py 0
