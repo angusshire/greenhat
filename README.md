@@ -9,7 +9,7 @@ The following image is the result of running
 
  <p align ='center'><img src="https://github.com/4148/greenhat/blob/master/example.png" alt="example image"/></p>
 
-Beautiful, isn't it? The run took a total of eight hours.
+The run took a total of eight hours. Beautiful, isn't it?
 
 ### How to Use
 Place `greenhat.py` in your Git repository. Make sure your [remote repository URL is set](https://help.github.com/articles/adding-a-remote/), and that you have a [public SSH key set up](https://help.github.com/articles/generating-ssh-keys/). Then run the script with the python interpreter, with an integer specifying `n` number of days before today to generate commits for. E.g.,
