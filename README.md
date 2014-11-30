@@ -7,7 +7,7 @@ The following image is the result of running
 
 	python greenhat.py 365
 
- <p align ='center'><img src="https://github.com/4148/greenhat/blob/master/greenhat.png" alt="run image" width="10%" height="10%"/></p>
+ <p align ='center'><img src="https://github.com/4148/greenhat/blob/master/example.png" alt="example image"/></p>
 
 Beautiful, isn't it?
 
