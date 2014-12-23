@@ -6,11 +6,11 @@ Place `greenhat.py` in your Git repository. Make sure your [remote repository UR
 
 	python greenhat.py <n>
 
-It might take a while to generate all the commits. If greenhat stops before it finishes, you can resume where you last left off by specifying a date before today when you want it to resume, like
+It might take a while to generate all the commits. If greenhat stops before it finishes, you can resume where you last left off by specifying a date before today when you want it to resume, like so:
 
 	python greenhat.py <n> <date>
 
-where `n` is the remaining days you want to generate commits for, and `date` is a date string in the form `yyyy-mm-dd`  (e.g., 2013-04-05).
+`n` is the remaining days you want to generate commits for, and `date` is a date string in the form `yyyy-mm-dd`  (e.g., 2013-04-05).
 
 Enjoy your decorated calendar!
 
