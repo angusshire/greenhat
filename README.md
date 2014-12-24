@@ -6,7 +6,7 @@ Place `greenhat.py` in your Git repository. Make sure your [remote repository UR
 
 	python greenhat.py <n>
 
-It might take a while to generate all the commits. If greenhat stopped before it finished, you can resume where you last left off by specifying a date before today where you want it to resume, like
+It might take a while to generate all the commits. If greenhat stops before it finishes, you can resume where you last left off by specifying a date before today when you want it to resume, like
 
 	python greenhat.py <n> <date>
 
