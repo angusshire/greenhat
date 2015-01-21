@@ -7,3 +7,6 @@ Place `greenhat.py` in your Git repository. Make sure your [remote repository UR
 	python greenhat.py <n>
 
 It might take a while to generate all the commits. Enjoy your decorated calendar!
+
+### License
+greenhat is distributed under the GNU General Public License.
