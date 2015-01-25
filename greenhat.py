@@ -5,9 +5,9 @@ import sys
 import subprocess
 import os
 
-# returns a date string for the date that is N days BEFORE today
-def get_date_string(n):
-	d = date.today() - timedelta(days=n)
+# returns a date string for the date that is N days before STARTDATE
+def get_date_string(n, startdate):
+	d = startdate - timedelta(days=n)
 	rtn = d.strftime("%a %b %d %X %Y %z -0400")
 	return rtn
 
@@ -17,14 +17,16 @@ def main(argv):
 		print "Error: Bad input."
 		sys.exit(1)
 	n = int(argv[0])
-	startdate = int(argv[1]);
+	if len(argv) == 1:
+		startdate = date.today()
+	if len(argv) == 2:
+		startdate = date(int(argv[1][0:4]), int(argv[1][5:7]), int(argv[1][8:10]))
 	i = 0
-	devnull = open(os.devnull, 'w')
 	while i <= n:
-		curdate = get_date_string(i)
+		curdate = get_date_string(i, startdate)
 		num_commits = randint(1, 25)
 		for commit in range(0, num_commits):
-			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add -A; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'; git push;", shell=True)#, stdout=devnull, stderr=devnull)
+			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add -A; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'; git push;", shell=True)
 			sleep(.5)
 		i += 1
 

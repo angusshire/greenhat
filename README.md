@@ -6,7 +6,13 @@ Place `greenhat.py` in your Git repository. Make sure your [remote repository UR
 
 	python greenhat.py <n>
 
-It might take a while to generate all the commits. Enjoy your decorated calendar!
+It might take a while to generate all the commits. If greenhat stopped before it finished, you can resume where you last left off by specifying a date before today where you want it to resume, like
+
+	python greenhat.py <n> <date>
+
+where `n` is the remaining days you want to generate commits for, and `date` is a date string in the form `yyyy-mm-dd`  (e.g., 2013-04-05).
+
+Enjoy your decorated calendar!
 
 ### License
 greenhat is distributed under the GNU General Public License.
