@@ -4,6 +4,6 @@ greenhat is a quick hack for decorating your GitHub contribution calendar with c
 ### How to Use
 Place `greenhat.py` in your Git repository. Make sure your remote repository URL is set. Then run the script with the python interpreter, with an integer specifying `n` number of days before today to generate commits for. E.g.,
 
-	`python greenhat.py <n>`
+	python greenhat.py <n>
 
 It might take a while to generate all the commits. Enjoy your decorated calendar!
