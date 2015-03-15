@@ -23,7 +23,7 @@ def main(argv):
 		curdate = get_date_string(i)
 		num_commits = randint(1, 25)
 		for commit in range(0, num_commits):
-			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add -A; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'; git push;", shell=True)#, stdout=devnull, stderr=devnull)
+			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add -A; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'; git push;", shell=True, stdout=devnull, stderr=devnull)
 			sleep(.5)
 		i += 1
 
