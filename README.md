@@ -3,7 +3,7 @@ greenhat is a quick hack for decorating your GitHub contribution calendar with c
 
 ### An Example
 
-The following image is the result of running
+The following calendar is the result of running
 
 	python greenhat.py 365
 
