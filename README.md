@@ -23,4 +23,4 @@ The run took a total of eight hours. Beautiful, isn't it?
 Enjoy your decorated calendar!
 
 ### License
-greenhat is distributed under the GNU General Public License.
+greenhat is distributed under the GNU General Public License v3.0 (GPLv3).
