@@ -7,7 +7,7 @@ The following image is the result of running
 
 	python greenhat.py 365
 
- <p align ='center'><img src="https://github.com/4148/greenhat/blob/master/example.png" alt="example image" width="80%" height="80%"/></p>
+<img src="https://github.com/4148/greenhat/blob/master/example.png" alt="example image" width="80%" height="80%"/>
 
 The run took a total of eight hours. Beautiful, isn't it?
 
