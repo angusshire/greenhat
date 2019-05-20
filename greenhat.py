@@ -3,7 +3,6 @@
 
 from datetime import date, timedelta
 from random import randint
-from time import sleep
 import sys
 import subprocess
 import os
@@ -29,8 +28,7 @@ def main(argv):
 		curdate = get_date_string(i, startdate)
 		num_commits = randint(1, 10)
 		for commit in range(0, num_commits):
-			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; git add realwork.txt; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'; git push;", shell=True)
-			sleep(.5)
+			subprocess.call("echo '" + curdate + str(randint(0, 1000000)) +"' > realwork.txt; sync; git add realwork.txt; GIT_AUTHOR_DATE='" + curdate + "' GIT_COMMITTER_DATE='" + curdate + "' git commit -m 'update'", shell=True)
 		i += 1
 	subprocess.call("git rm realwork.txt; git commit -m 'delete'; git push;", shell=True)
 
